@@ -40,7 +40,7 @@ android {
 
 protobuf {
     protoc {
-        artifact = 'com.google.protobuf:protoc:3.11.4'
+        path = "/usr/local/bin/protoc"
     }
     generateProtoTasks {
         all().each { task ->
@@ -52,6 +52,7 @@ protobuf {
         }
     }
 }
+
 
 dependencies {
     implementation 'com.google.protobuf:protobuf-javalite:3.11.4'
